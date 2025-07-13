@@ -1,59 +1,104 @@
-# WikiVideogames
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+# 🎮 WikiVideoGames
 
-## Development server
+WikiVideoGames es una aplicación desarrollada en Angular que permite a los usuarios explorar videojuegos registrados, gestionar una lista de favoritos, y agregar o editar información de juegos. Está diseñada como un proyecto académico utilizando tecnologías modernas como **Angular**, **Tailwind CSS**, y un servidor mock con **json-server**.
 
-To start a local development server, run:
+---
+
+## 🚀 Funcionalidades
+
+- 🔍 **Explorar juegos registrados**  
+- ⭐ **Ver juegos favoritos**  
+- ➕ **Agregar un nuevo juego**  
+- 🗑️ **Eliminar un juego de favoritos**  
+- ✏️ **Editar información de juegos favoritos**
+
+---
+
+## 🛠️ Tecnologías
+
+- **Angular** (vX.X)  
+- **Tailwind CSS**  
+- **json-server** (mock API en `localhost:3000`)
+
+---
+
+## 🗂️ Estructura del Proyecto
+
+```
+src/
+└── app/
+    ├── core/
+    │   └── services/
+    │       ├── favorite-games.service.ts
+    │       └── games.service.ts
+    ├── features/
+    │   └── dashboard/
+    │       └── pages/
+    │           ├── add-game/
+    │           │   ├── add-game.component.ts/html/css
+    │           ├── explore/
+    │           │   ├── explore.component.ts/html/css
+    │           └── favorites/
+    │               ├── favorites.component.ts/html/css
+    ├── shared/
+    │   ├── components/
+    │   │   ├── container/
+    │   │   ├── game-form/
+    │   │   └── header/
+    │   └── interfaces/
+    │       └── game.interface.ts
+    ├── app.component.html
+    ├── app.component.css
+    ├── app.component.ts
+    ├── app.config.ts
+    └── app.routes.ts
+├── data/
+       └── db.json ← mock API con json-server
+├──environments/
+    └── environment.prod.ts
+    └── environment.ts
+```
+
+📌 **Nota:**  
+- La carpeta `data/` contiene un archivo `db.json` utilizado como base de datos mock para simular llamadas HTTP usando `json-server`.  
+- La carpeta `environments/` gestiona las configuraciones según el entorno (dev/prod).
+
+---
+
+## 📦 Instalación y ejecución
 
 ```bash
+# Clonar repositorio
+git clone https://github.com/tu-usuario/wiki-video-games.git
+cd wiki-video-games
+
+# Instalar dependencias
+npm install
+
+# Ejecutar json-server en paralelo (puerto 3000)
+npx json-server --watch src/app/data/db.json --port 3000
+
+# Iniciar la app Angular
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🌐 Proyecto Editable en StackBlitz
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Además, se requerirá asociar el proyecto a StackBlitz para facilitar la edición en línea. Puedes acceder al proyecto editable mediante el siguiente enlace:
 
-```bash
-ng generate component component-name
+```
+https://stackblitz.com/edit/angular-ivy-nn
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 👤 Autor
 
-## Building
+**Franco Leguiza**  
+- DNI: 44.928.045  
+- Email: [francoleguiza002@gmail.com](mailto:francoleguiza002@gmail.com)  
+- Sede: Tandil
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

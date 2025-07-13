@@ -1,0 +1,67 @@
+<form [formGroup]="gameForm" (ngSubmit)="onSubmit()"
+    class="bg-gray-900 p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-lg mx-auto border border-gray-700">
+
+    <h2 class="text-3xl font-extrabold text-center text-purple-400 mb-8 tracking-wider">
+        {{ gameToEdit ? 'Editar Juego Favorito' : 'Registro de Juego' }}
+    </h2>
+    <p class="text-gray-400 text-center mb-6 text-sm">
+        {{ gameToEdit ? 'Modifique los detalles del juego y guarde los cambios.' : 'Complete los campos para añadir un
+        nuevo título a la base de datos.' }}
+    </p>
+
+    <div class="mb-5">
+        <label for="name" class="block text-gray-300 text-sm font-semibold mb-2">Nombre del Juego:</label>
+        <input type="text" id="name" formControlName="name" class="shadow-sm appearance-none border border-gray-600 rounded-lg w-full py-2.5 px-4 text-gray-100 leading-tight
+                  focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-800
+                  transition duration-200 ease-in-out placeholder-gray-500" placeholder="Ej: Elden Ring">
+        <div *ngIf="formControls['name'].invalid && (formControls['name'].dirty || formControls['name'].touched)"
+            class="text-red-400 text-xs mt-2 font-medium">
+            <div *ngIf="formControls['name'].errors?.['required']">El nombre es obligatorio.</div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <label for="background_image" class="block text-gray-300 text-sm font-semibold mb-2">URL de la Imagen de
+            Fondo:</label>
+        <input type="text" id="background_image" formControlName="background_image" class="shadow-sm appearance-none border border-gray-600 rounded-lg w-full py-2.5 px-4 text-gray-100 leading-tight
+                  focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-800
+                  transition duration-200 ease-in-out placeholder-gray-500"
+            placeholder="Ej: https://example.com/image.jpg">
+        <div *ngIf="formControls['background_image'].invalid && (formControls['background_image'].dirty || formControls['background_image'].touched)"
+            class="text-red-400 text-xs mt-2 font-medium">
+            <div *ngIf="formControls['background_image'].errors?.['required']">La URL de la imagen es obligatoria.</div>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <label for="released" class="block text-gray-300 text-sm font-semibold mb-2">Fecha de Lanzamiento:</label>
+        <input type="date" id="released" formControlName="released" class="shadow-sm appearance-none border border-gray-600 rounded-lg w-full py-2.5 px-4 text-gray-100 leading-tight
+                  focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-800
+                  transition duration-200 ease-in-out dark:[color-scheme:dark]">
+        <div *ngIf="formControls['released'].invalid && (formControls['released'].dirty || formControls['released'].touched)"
+            class="text-red-400 text-xs mt-2 font-medium">
+            <div *ngIf="formControls['released'].errors?.['required']">La fecha de lanzamiento es obligatoria.</div>
+            <div *ngIf="formControls['released'].errors?.['invalidReleasedYear']">El año de lanzamiento debe ser 2000 o
+                posterior.</div>
+        </div>
+    </div>
+
+    <div class="mb-8">
+        <label for="rating" class="block text-gray-300 text-sm font-semibold mb-2">Rating (0-5):</label>
+        <input type="number" id="rating" formControlName="rating" step="0.1" class="shadow-sm appearance-none border border-gray-600 rounded-lg w-full py-2.5 px-4 text-gray-100 leading-tight
+                  focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-gray-800
+                  transition duration-200 ease-in-out placeholder-gray-500" placeholder="Ej: 4.5">
+        <div *ngIf="formControls['rating'].invalid && (formControls['rating'].dirty || formControls['rating'].touched)"
+            class="text-red-400 text-xs mt-2 font-medium">
+            <div *ngIf="formControls['rating'].errors?.['required']">El rating es obligatorio.</div>
+            <div *ngIf="formControls['rating'].errors?.['min']">El rating mínimo es 0.</div>
+            <div *ngIf="formControls['rating'].errors?.['max']">El rating máximo es 5.</div>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="gameForm.invalid" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg
+                 focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105
+                 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:hover:scale-100">
+        Guardar Juego
+    </button>
+</form>

@@ -1,0 +1,87 @@
+<div class="min-h-screen bg-gray-950 text-white p-4 sm:p-6 lg:p-8">
+    <h2
+        class="text-4xl sm:text-5xl font-extrabold text-center text-purple-400 mb-8 sm:mb-12 tracking-wide leading-tight">
+        Mis Juegos Favoritos
+    </h2>
+
+    <div *ngIf="isLoading" class="flex items-center justify-center h-64">
+        <div class="animate-spin rounded-full h-20 w-20 border-t-4 border-b-4 border-purple-500"></div>
+        <p class="ml-4 text-xl text-gray-300">Cargando tus juegos favoritos...</p>
+    </div>
+
+    <div *ngIf="errorMessage" class="bg-red-800 text-white p-4 rounded-lg text-center shadow-lg max-w-lg mx-auto">
+        <p class="font-bold text-lg mb-2">¡Error al cargar tus juegos favoritos!</p>
+        <p>{{ errorMessage }}</p>
+        <p class="mt-4 text-sm text-red-200">Por favor, intenta recargar la página o verifica tu conexión.</p>
+    </div>
+
+    <div *ngIf="editingGame"
+        class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 overflow-y-auto">
+        <div class="w-full max-w-lg relative">
+            <app-game-form [gameToEdit]="editingGame" (formSubmit)="onEditFormSubmit($event)"></app-game-form>
+
+            <button class="w-full mt-6 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg
+               focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105"
+                (click)="cancelEdit()">
+                Cancelar Edición
+            </button>
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+                (click)="cancelEdit()">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div *ngIf="!isLoading && !errorMessage && favorites.length === 0"
+        class="bg-gray-800 text-gray-300 p-6 rounded-lg text-center shadow-lg max-w-md mx-auto">
+        <p class="text-xl font-semibold mb-2">✨ Aún no tienes juegos marcados como favoritos.</p>
+        <p>¡Ve a la sección <a routerLink="/explore"
+                class="text-purple-400 hover:text-purple-300 font-bold transition-colors">"Explorar"</a> para añadir
+            algunos!</p>
+    </div>
+
+    <div *ngIf="!isLoading && !errorMessage && favorites.length > 0"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:gap-8">
+        <div *ngFor="let game of favorites"
+            class="bg-gray-900 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ease-in-out border border-gray-700 hover:border-purple-500">
+            <img [src]="game.background_image" alt="{{ game.name }}"
+                class="w-full h-48 object-cover object-center group-hover:opacity-80 transition-opacity duration-300">
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-white mb-2 truncate">{{ game.name }}</h3>
+                <p class="text-gray-400 text-sm mb-1">
+                    <strong class="text-gray-300">Lanzamiento:</strong> {{ game.released }}
+                </p>
+                <p class="text-gray-400 text-sm mb-4">
+                    <strong class="text-gray-300">Rating:</strong> <span class="text-yellow-400">{{ game.rating
+                        }}</span> / 5
+                </p>
+                <div class="game-actions flex justify-between space-x-2">
+                    <button class="flex-1 py-2 px-3 rounded-md font-semibold text-sm transition-all duration-300 ease-in-out
+                         bg-blue-600 hover:bg-blue-700 text-white" (click)="startEdit(game)">
+                        <svg class="w-4 h-4 mr-1 -ml-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                            </path>
+                        </svg>
+                        Editar
+                    </button>
+                    <button class="flex-1 py-2 px-3 rounded-md font-semibold text-sm transition-all duration-300 ease-in-out
+               bg-red-600 hover:bg-red-700 text-white" (click)="removeFavorite(game.id!, game.name)">
+                        <svg class="w-4 h-4 mr-1 -ml-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                            </path>
+                        </svg>
+                        Eliminar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

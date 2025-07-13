@@ -1,0 +1,118 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "name": "The Witcher 3: Wild Hunt",
+      "background_image": "https://imgs.search.brave.com/Oo8zhq--O6LKKh18iBH7_goJqcfEhEuE2EdVLxT79ig/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5hcGkucGxheXN0/YXRpb24uY29tL3Z1/bGNhbi9hcC9ybmQv/MjAyMjExLzA5MTQv/VHZjSUhrWXFxbG4x/UkdiYUZxQmV1RnA2/LmpwZw",
+      "released": "2015-05-18",
+      "rating": 4.67
+    },
+    {
+      "id": "2",
+      "name": "Grand Theft Auto V",
+      "background_image": "https://imgs.search.brave.com/VzNFmwLwoW48c6TBhgwLiRDIdQf2JdymTc13X3HN0xY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZ3RhLTUtcGlj/dHVyZXMtYTEzdjl6/ZjB4aXp5aWZlNC5q/cGc",
+      "released": "2013-09-17",
+      "rating": 4.47
+    },
+    {
+      "id": "3",
+      "name": "Red Dead Redemption 2",
+      "background_image": "https://imgs.search.brave.com/sAroZsrjA6_X6HqRBs3tvqzy7LTTGtJhlLxun-SZC08/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/eHRyYWZvbmRvcy5j/b20vd2FsbHBhcGVy/cy9yZWQtZGVhZC1y/ZWRlbXB0aW9uLTIt/cG9ydGFkYS0zMzgw/LmpwZw",
+      "released": "2018-10-26",
+      "rating": 4.7
+    },
+    {
+      "id": "4",
+      "name": "Cyberpunk 2077",
+      "background_image": "https://imgs.search.brave.com/-7cbUbay8LAnUeJdxKnvO4TvfUy0Qi51EH7CqEzx9Gs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ub2Vz/cGFpc3BhcmFmcmlr/aXMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzAxL2Fu/YWxpc2lzLWN5YmVy/cHVuay0yMDc3LXBv/cnRhZGEuanBn",
+      "released": "2020-12-10",
+      "rating": 4.04
+    },
+    {
+      "id": "5",
+      "name": "God of War (2018)",
+      "background_image": "https://imgs.search.brave.com/x2NokbpnLyE3ut8bFypRmmm-F1kP8dg7tMjfyiAgPpo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvODEy/MzE0LnBuZw",
+      "released": "2018-04-20",
+      "rating": 4.63
+    },
+    {
+      "id": "6",
+      "name": "Elden Ring",
+      "background_image": "https://imgs.search.brave.com/hhRTO5loei5NwB0ccUITuJ8qC79Wf6RGuX4b3O84FRg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZWxkZW4tcmlu/Zy1waWN0dXJlcy02/cjg1dGgwZ25oaWZz/cWQwLmpwZw",
+      "released": "2022-02-25",
+      "rating": 4.63
+    },
+    {
+      "id": "2d1b",
+      "name": "EA Sports FC 25 ",
+      "background_image": "https://imgs.search.brave.com/1CupkXf4HeADKdvA9tdCMm1VND_U0MYQZSQk_0nSG-4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZWNv/bmVjdGFkb3MuY29t/LmFyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzA3L0VBRkMy/NS1CZWxsaW5naGFt/LTEwMjR4NTc2Lmpw/Zw",
+      "released": "2024-09-27",
+      "rating": 5
+    },
+    {
+      "id": "acef",
+      "name": "Assassin's Creed Shadows",
+      "background_image": "https://imgs.search.brave.com/vBzL9bgA4ZYnKb2I2DwPMDR3_ytCvkZTAq7xdumYeQw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmFudGFzeW11bmRv/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMS9SRURf/S0VZQVJUX1NURF9S/R0JfV1ctNjk2eDM5/OC53ZWJw",
+      "released": "2025-03-20",
+      "rating": 3.5
+    }
+  ],
+  "favorites": [
+    {
+      "id": "1",
+      "name": "The Witcher 3: Wild Hunt",
+      "background_image": "https://imgs.search.brave.com/Oo8zhq--O6LKKh18iBH7_goJqcfEhEuE2EdVLxT79ig/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5hcGkucGxheXN0/YXRpb24uY29tL3Z1/bGNhbi9hcC9ybmQv/MjAyMjExLzA5MTQv/VHZjSUhrWXFxbG4x/UkdiYUZxQmV1RnA2/LmpwZw",
+      "released": "2015-05-18",
+      "rating": 4.67
+    },
+    {
+      "id": "2",
+      "name": "Grand Theft Auto V",
+      "background_image": "https://imgs.search.brave.com/VzNFmwLwoW48c6TBhgwLiRDIdQf2JdymTc13X3HN0xY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZ3RhLTUtcGlj/dHVyZXMtYTEzdjl6/ZjB4aXp5aWZlNC5q/cGc",
+      "released": "2013-09-17",
+      "rating": 4.47
+    },
+    {
+      "id": "3",
+      "name": "Red Dead Redemption 2",
+      "background_image": "https://imgs.search.brave.com/sAroZsrjA6_X6HqRBs3tvqzy7LTTGtJhlLxun-SZC08/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/eHRyYWZvbmRvcy5j/b20vd2FsbHBhcGVy/cy9yZWQtZGVhZC1y/ZWRlbXB0aW9uLTIt/cG9ydGFkYS0zMzgw/LmpwZw",
+      "released": "2018-10-26",
+      "rating": 4.7
+    },
+    {
+      "id": "4",
+      "name": "Cyberpunk 2077",
+      "background_image": "https://imgs.search.brave.com/-7cbUbay8LAnUeJdxKnvO4TvfUy0Qi51EH7CqEzx9Gs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ub2Vz/cGFpc3BhcmFmcmlr/aXMuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzAxL2Fu/YWxpc2lzLWN5YmVy/cHVuay0yMDc3LXBv/cnRhZGEuanBn",
+      "released": "2020-12-10",
+      "rating": 4.04
+    },
+    {
+      "id": "5",
+      "name": "God of War (2018)",
+      "background_image": "https://imgs.search.brave.com/x2NokbpnLyE3ut8bFypRmmm-F1kP8dg7tMjfyiAgPpo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvODEy/MzE0LnBuZw",
+      "released": "2018-04-20",
+      "rating": 4.63
+    },
+    {
+      "id": "2d1b",
+      "name": "EA Sports FC 25 ",
+      "background_image": "https://imgs.search.brave.com/1CupkXf4HeADKdvA9tdCMm1VND_U0MYQZSQk_0nSG-4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZWNv/bmVjdGFkb3MuY29t/LmFyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI0LzA3L0VBRkMy/NS1CZWxsaW5naGFt/LTEwMjR4NTc2Lmpw/Zw",
+      "released": "2024-09-27",
+      "rating": 5
+    },
+    {
+      "id": "6",
+      "name": "Elden Ring",
+      "background_image": "https://imgs.search.brave.com/hhRTO5loei5NwB0ccUITuJ8qC79Wf6RGuX4b3O84FRg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZWxkZW4tcmlu/Zy1waWN0dXJlcy02/cjg1dGgwZ25oaWZz/cWQwLmpwZw",
+      "released": "2022-02-25",
+      "rating": 4.63
+    },
+    {
+      "id": "acef",
+      "name": "Assassin's Creed Shadows",
+      "background_image": "https://imgs.search.brave.com/vBzL9bgA4ZYnKb2I2DwPMDR3_ytCvkZTAq7xdumYeQw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZmFudGFzeW11bmRv/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMS9SRURf/S0VZQVJUX1NURF9S/R0JfV1ctNjk2eDM5/OC53ZWJw",
+      "released": "2025-03-20",
+      "rating": 3.5
+    }
+  ]
+}

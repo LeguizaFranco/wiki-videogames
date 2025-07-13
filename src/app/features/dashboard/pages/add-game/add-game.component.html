@@ -3,7 +3,7 @@
         <div class="w-full max-w-lg">
             <app-game-form (formSubmit)="onNewGameSubmit($event)"></app-game-form>
 
-            <button
+            <button (click)="onCancelAdd()"
                 class="w-full mt-6 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg
                            focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105">
                 Cancelar

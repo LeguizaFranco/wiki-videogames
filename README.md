@@ -17,7 +17,7 @@ WikiVideoGames es una aplicación desarrollada en Angular que permite a los usua
 
 ## 🛠️ Tecnologías
 
-- **Angular** (vX.X)  
+- **Angular**  
 - **Tailwind CSS**  
 - **json-server** (mock API en `localhost:3000`)
 

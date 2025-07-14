@@ -90,7 +90,7 @@ ng serve
 Además, se requerirá asociar el proyecto a StackBlitz para facilitar la edición en línea. Puedes acceder al proyecto editable mediante el siguiente enlace:
 
 ```
-https://stackblitz.com/edit/angular-ivy-nn
+https://stackblitz.com/~/github.com/LeguizaFranco/wiki-videogames
 ```
 
 ---

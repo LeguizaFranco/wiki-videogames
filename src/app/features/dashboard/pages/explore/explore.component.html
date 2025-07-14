@@ -19,6 +19,7 @@
         class="bg-gray-800 text-gray-300 p-6 rounded-lg text-center shadow-lg max-w-md mx-auto">
         <p class="text-xl font-semibold mb-2">🎮 No se encontraron juegos.</p>
         <p>Parece que aún no hay títulos disponibles en esta sección.</p>
+        <p>Verificar levantar el db.json con 'npm run start-api'</p>
     </div>
 
     <div *ngIf="!isLoading && !errorMessage && games.length > 0"

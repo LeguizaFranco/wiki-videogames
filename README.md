@@ -44,13 +44,14 @@ src/
     ├── shared/
     │   ├── components/
     │   │   ├── container/
+            |   ├── container.component.ts/html/css
     │   │   ├── game-form/
+            |   ├── game-form.component.ts/html/css
     │   │   └── header/
+            |   ├── header.component.ts/html/css
     │   └── interfaces/
     │       └── game.interface.ts
-    ├── app.component.html
-    ├── app.component.css
-    ├── app.component.ts
+    ├── app.component.ts/html/css
     ├── app.config.ts
     └── app.routes.ts
 ├── data/
